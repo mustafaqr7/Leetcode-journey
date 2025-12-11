@@ -26,3 +26,10 @@ class Solution {
     }
 }
 ``
+
+⚠️ Important
+Returning null is valid, but you must handle it carefully.
+If you try to access result[0] when result is null, you’ll get a NullPointerException.
+That’s why in practice, many developers prefer to:
+Return an empty array (new int[0]) instead of null.
+Or throw an exception if no solution exists.
